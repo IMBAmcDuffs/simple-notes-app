@@ -1,0 +1,5 @@
+# Desktop Screen
+
+- **HTML Preview**: https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzYzNjc4ZWNlY2E0ODQ0MjI4MGUzZjA1MTI0ZDU2MWE4EgsSBxCC5ZSMnhwYAZIBJAoKcHJvamVjdF9pZBIWQhQxNDAwMTk3NTY4NDA1MDg5Mjc0OA&filename=&opi=96797242
+- **Image Preview**: https://lh3.googleusercontent.com/aida/ADBb0ugujZH_ImHVwGKNzzC8-k8PWuoxDYtHZgoQoz8lCEPOTDrcX4ABS2YNBaJcvkSk71LiJCQFIGPwPxxt7N-XoLugkPpv0NiacrQVGtfxbf-wLGCLAkN-J0TBNC7zLZP7ZPe7qCeyWSarRrY690g6XPIFzDWDLJZSEVCE07R6XwBzk07eLVjRMDNSm3UML20boIVaC3u6weJ4-ElawAM8grDqfL_TWCrPowPFcR_Ml6A8d7dTHKQRkCJAWASb
+- **Screen ID**: 8f2c3323840c4927a7689d1618d21396
