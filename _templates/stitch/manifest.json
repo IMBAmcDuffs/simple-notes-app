@@ -1,0 +1,31 @@
+{
+  "project_id": "14001975684050892748",
+  "screens": {
+    "desktop": {
+      "screenId": "8f2c3323840c4927a7689d1618d21396",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzYzNjc4ZWNlY2E0ODQ0MjI4MGUzZjA1MTI0ZDU2MWE4EgsSBxCC5ZSMnhwYAZIBJAoKcHJvamVjdF9pZBIWQhQxNDAwMTk3NTY4NDA1MDg5Mjc0OA&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0ugujZH_ImHVwGKNzzC8-k8PWuoxDYtHZgoQoz8lCEPOTDrcX4ABS2YNBaJcvkSk71LiJCQFIGPwPxxt7N-XoLugkPpv0NiacrQVGtfxbf-wLGCLAkN-J0TBNC7zLZP7ZPe7qCeyWSarRrY690g6XPIFzDWDLJZSEVCE07R6XwBzk07eLVjRMDNSm3UML20boIVaC3u6weJ4-ElawAM8grDqfL_TWCrPowPFcR_Ml6A8d7dTHKQRkCJAWASb",
+      "deviceType": "desktop"
+    },
+    "mobile": {
+      "screenId": "d7955246843c4374ba45b1436471a6a9",
+      "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzEzMTg5ZWE1YjUwNDRjM2E5YjZjOTc1YjNjZDViYzMzEgsSBxCC5ZSMnhwYAZIBJAoKcHJvamVjdF9pZBIWQhQxNDAwMTk3NTY4NDA1MDg5Mjc0OA&filename=&opi=96797242",
+      "imageUrl": "https://lh3.googleusercontent.com/aida/ADBb0ui69dvRmRxrCSiMtnO7IkpZjvhyM7bHYrGShRTTCwddtFFupMucoaHF-ZMC6LoEcJYf7YoHxZytyjXgt3RwNsbGvoEd7wPfnaDOtEYgVLt3m8-inw_KrMQQhiOVBJk1ffpRvX-D5cJRnvUQwOZQc6d8ENKxZgHrrMLeYLe6D2tfL2Erz3FnrgkaIFcWM361iczddf1BZ-EpRcK38lUnkRxotYTtJmcyHYFKGV0s3dXZPoOeCyn2oCXQ7pY0",
+      "deviceType": "mobile"
+    }
+  },
+  "theme": {
+    "note": "Theme extraction derived from Stitch generation parameters",
+    "prompt_used": "Design a UI screen for: Simple Notes App (Model Test). Objective: Build a minimal Next.js notes application to validate the Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled model. The app should have: (1) Create/edit/delete notes with title and body, (2) Local storage persistence, (3) Search/filter notes by text, (4) Responsive Tailwind CSS design, (5) TypeScript throughout. Keep it simple \u2014 single-page SPA with no backend.. Design brief summary: Simple notes app - clean minimalist UI with Tailwind CSS. Single-page layout with note list sidebar and editor panel. Mobile-responsive. Style guidance: Components: NoteCard, NoteList, NoteEditor, SearchBar. Colors: neutral grays with blue accent. Layout: responsive 2-column on desktop, stacked on mobile.",
+    "device_count": 2,
+    "devices_generated": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "device_types": [
+    "desktop",
+    "mobile"
+  ],
+  "prompt_used": "Design a UI screen for: Simple Notes App (Model Test). Objective: Build a minimal Next.js notes application to validate the Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled model. The app should have: (1) Create/edit/delete notes with title and body, (2) Local storage persistence, (3) Search/filter notes by text, (4) Responsive Tailwind CSS design, (5) TypeScript throughout. Keep it simple \u2014 single-page SPA with no backend.. Design brief summary: Simple notes app - clean minimalist UI with Tailwind CSS. Single-page layout with note list sidebar and editor panel. Mobile-responsive. Style guidance: Components: NoteCard, NoteList, NoteEditor, SearchBar. Colors: neutral grays with blue accent. Layout: responsive 2-column on desktop, stacked on mobile."
+}
