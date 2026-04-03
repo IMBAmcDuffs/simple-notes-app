@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#360f00",
+                    "surface": "#fcf9f8",
+                    "on-primary-fixed-variant": "#003ea8",
+                    "on-tertiary-fixed-variant": "#7d2d00",
+                    "inverse-on-surface": "#f3f0ef",
+                    "surface-bright": "#fcf9f8",
+                    "primary-fixed-dim": "#b4c5ff",
+                    "outline": "#737686",
+                    "error": "#ba1a1a",
+                    "primary-container": "#2563eb",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-fixed": "#00174b",
+                    "inverse-primary": "#b4c5ff",
+                    "tertiary-fixed": "#ffdbcd",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "outline-variant": "#c3c6d7",
+                    "secondary-container": "#acbfff",
+                    "tertiary": "#943700",
+                    "primary-fixed": "#dbe1ff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-surface-variant": "#434655",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#00174b",
+                    "surface-variant": "#e5e2e1",
+                    "surface-container-high": "#eae7e7",
+                    "on-secondary-fixed-variant": "#31447b",
+                    "surface-container": "#f0eded",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "surface-container-highest": "#e5e2e1",
+                    "secondary": "#495c95",
+                    "on-tertiary-container": "#ffede6",
+                    "tertiary-container": "#bc4800",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#313030",
+                    "on-primary-container": "#eeefff",
+                    "tertiary-fixed-dim": "#ffb596",
+                    "background": "#fcf9f8",
+                    "surface-tint": "#0053db",
+                    "on-background": "#1c1b1b",
+                    "secondary-fixed-dim": "#b4c5ff",
+                    "secondary-fixed": "#dbe1ff",
+                    "primary": "#004ac6",
+                    "on-secondary-container": "#394c84"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8] dark:bg-zinc-950 flex items-center justify-between px-6 py-4 w-full max-w-full mx-auto">
+<div class="flex items-center gap-4 w-full">
+<div class="relative flex-grow max-w-2xl">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-lg">search</span>
+<input autofocus="" class="w-full bg-surface-container-low border-none rounded-lg pl-10 pr-4 py-2 text-on-surface focus:ring-1 focus:ring-primary/20 transition-all placeholder:text-on-surface-variant/50" placeholder="Search your notes..." type="text"/>
+</div>
+<button class="text-primary font-semibold text-sm hover:opacity-80 transition-opacity">Cancel</button>
+</div>
+</nav>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto min-h-screen">
+<!-- Categorical Filter Tags -->
+<section class="mb-10 overflow-x-auto">
+<div class="flex gap-2 pb-2">
+<button class="flex items-center gap-1.5 px-4 py-2 bg-primary text-on-primary rounded-lg text-sm font-medium transition-all">
+<span>All</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-lg text-sm font-medium hover:bg-surface-container-high transition-all">
+<span class="text-primary opacity-60">#</span>Work
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-lg text-sm font-medium hover:bg-surface-container-high transition-all">
+<span class="text-primary opacity-60">#</span>Ideas
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-lg text-sm font-medium hover:bg-surface-container-high transition-all">
+<span class="text-primary opacity-60">#</span>Personal
+                </button>
+<button class="flex items-center gap-1.5 px-4 py-2 bg-surface-container-low text-on-surface-variant rounded-lg text-sm font-medium hover:bg-surface-container-high transition-all">
+<span class="text-primary opacity-60">#</span>Archive
+                </button>
+</div>
+</section>
+<!-- Search Results (Asymmetric Editorial Layout) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+<!-- NoteCard 1 -->
+<div class="md:col-span-7 group cursor-pointer">
+<div class="p-6 rounded-lg bg-surface-container-lowest transition-all duration-300 group-hover:bg-surface-container-low">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-1.5 h-1.5 rounded-full bg-primary"></div>
+<span class="font-['Inter'] text-[11px] uppercase tracking-[0.05em] font-medium text-on-surface-variant">Mar 24, 2024 • Work</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-2 tracking-tight">Q3 Product Strategy Roadmap</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-2">Outline for the upcoming digital ledger aesthetic. Priorities include typographic hierarchy and the removal of heavy border structures to favor tonal layering.</p>
+</div>
+</div>
+<!-- NoteCard 2 -->
+<div class="md:col-span-5 group cursor-pointer self-start">
+<div class="p-6 rounded-lg bg-surface-container-lowest transition-all duration-300 group-hover:bg-surface-container-low">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-1.5 h-1.5 rounded-full bg-tertiary"></div>
+<span class="font-['Inter'] text-[11px] uppercase tracking-[0.05em] font-medium text-on-surface-variant">Mar 22, 2024 • Ideas</span>
+</div>
+<h3 class="text-xl font-bold text-on-surface mb-2 tracking-tight">Swiss Print Influence</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-3">Researching Bauhaus principles for modern mobile interfaces. The grid should be mathematical but flexible.</p>
+</div>
+</div>
+<!-- NoteCard 3 (Editorial Image Card) -->
+<div class="md:col-span-12 group cursor-pointer">
+<div class="grid md:grid-cols-2 bg-surface-container-low rounded-lg overflow-hidden transition-all duration-300 group-hover:bg-surface-container-high">
+<div class="relative h-48 md:h-full min-h-[200px]">
+<img alt="Modern minimalist workspace" class="absolute inset-0 w-full h-full object-cover" data-alt="a clean minimalist workspace with a sleek laptop, a black journal, and a ceramic cup on a white desk with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU5oV2OmUcaJTSRYMCV-8yVFsDZDNZFEvpUpRjSbIbV8e2wuz0K_RwvxnMnibDe6SoAELqVgJVtfIhJ9OWVxUbwePaRKauTHICf99oh0QhYuZuFIyEnmujR-17Xl11M7r-Q8myUCeW6lZkIJJIWi5S7Y9Udnx1sapkENjxUA49tysjNOwVVeY3rWbw1l4qOyX6MAWdHjCyO6okKYPi80jmIFVkUgiqmIWUSxSXcdIRcitN0ggHq5Uod7F5jNj5TlZDI0uLlMRDrFrg"/>
+</div>
+<div class="p-8 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-3">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary"></div>
+<span class="font-['Inter'] text-[11px] uppercase tracking-[0.05em] font-medium text-on-surface-variant">Mar 19, 2024 • Personal</span>
+</div>
+<h3 class="text-2xl font-bold text-on-surface mb-4 tracking-tight">Journaling Rituals</h3>
+<p class="text-on-surface-variant text-base leading-relaxed">Collecting observations on how physical writing impacts cognitive retention compared to digital ledgers. Exploring the "Ink" metaphor.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State (Hidden when content exists) -->
+<div class="hidden flex-col items-center justify-center py-40 text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl text-on-surface-variant/30">description</span>
+</div>
+<h2 class="text-lg font-semibold text-on-surface mb-2">Start typing to filter your thoughts</h2>
+<p class="text-on-surface-variant max-w-xs mx-auto text-sm">Find connections across your digital ledger by searching tags or keywords.</p>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#ffffff] dark:bg-zinc-900/90 backdrop-blur-md z-50 rounded-t-lg shadow-[0_-10px_30px_rgba(28,27,27,0.04)] border-t border-zinc-200/15 dark:border-zinc-800/15">
+<div class="flex flex-col items-center justify-center text-[#434655] dark:text-zinc-500 px-4 py-1 hover:text-[#004ac6] transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-[0.05em] font-medium mt-1">Notes</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#434655] dark:text-zinc-500 px-4 py-1 hover:text-[#004ac6] transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="add_circle">add_circle</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-[0.05em] font-medium mt-1">New Note</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#434655] dark:text-zinc-500 px-4 py-1 hover:text-[#004ac6] transition-all duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="archive">archive</span>
+<span class="font-['Inter'] text-[11px] uppercase tracking-[0.05em] font-medium mt-1">Archive</span>
+</div>
+</nav>
+</body></html>
