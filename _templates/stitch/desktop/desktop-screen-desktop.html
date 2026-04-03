@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Curator | Editorial Notes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#dbe1ff",
+                    "surface-tint": "#0053db",
+                    "on-error": "#fff7f6",
+                    "on-primary": "#f8f7ff",
+                    "surface": "#faf8ff",
+                    "on-surface": "#113069",
+                    "outline-variant": "#98b1f2",
+                    "on-secondary": "#faf8fc",
+                    "inverse-on-surface": "#959cb5",
+                    "secondary-fixed-dim": "#d5d3d8",
+                    "on-primary-container": "#0048bf",
+                    "primary-fixed-dim": "#c7d3ff",
+                    "secondary": "#5f5f62",
+                    "error": "#9f403d",
+                    "secondary-container": "#e4e2e6",
+                    "on-secondary-fixed": "#3f3f43",
+                    "background": "#faf8ff",
+                    "on-tertiary-fixed": "#3c3650",
+                    "on-background": "#113069",
+                    "surface-container": "#eaedff",
+                    "on-primary-fixed": "#003798",
+                    "primary-fixed": "#dbe1ff",
+                    "on-tertiary-fixed-variant": "#59526e",
+                    "on-error-container": "#752121",
+                    "primary": "#0053db",
+                    "on-tertiary-container": "#4f4964",
+                    "on-surface-variant": "#445d99",
+                    "inverse-primary": "#618bff",
+                    "secondary-fixed": "#e4e2e6",
+                    "surface-variant": "#d9e2ff",
+                    "inverse-surface": "#060e20",
+                    "surface-bright": "#faf8ff",
+                    "on-tertiary": "#fdf7ff",
+                    "primary-dim": "#0048c1",
+                    "tertiary-container": "#dfd5f7",
+                    "surface-container-high": "#e2e7ff",
+                    "tertiary": "#625b77",
+                    "error-container": "#fe8983",
+                    "tertiary-fixed": "#dfd5f7",
+                    "tertiary-dim": "#564f6b",
+                    "surface-container-low": "#f2f3ff",
+                    "on-secondary-container": "#515155",
+                    "surface-container-highest": "#d9e2ff",
+                    "outline": "#6079b7",
+                    "error-dim": "#4e0309",
+                    "secondary-dim": "#535356",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-fixed-dim": "#d0c7e8",
+                    "on-primary-fixed-variant": "#0050d4",
+                    "surface-dim": "#cdd9ff",
+                    "on-secondary-fixed-variant": "#5b5b5f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(250, 248, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #0053db 0%, #0048c1 100%);
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #d9e2ff; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar Navigation (SideNavBar Anchor) -->
+<aside class="flex flex-col py-10 px-8 space-y-8 bg-slate-50 h-screen w-72 fixed left-0 top-0 font-sans tracking-tight text-sm">
+<div class="flex flex-col space-y-1">
+<h1 class="text-xl font-bold tracking-tighter text-slate-900">The Curator</h1>
+<p class="text-xs text-secondary opacity-70">Editorial Notes</p>
+</div>
+<!-- Primary Action -->
+<button class="signature-gradient text-on-primary py-3 px-4 rounded-xl flex items-center justify-center space-x-2 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-95 transition-all">
+<span class="material-symbols-outlined text-lg">add</span>
+<span class="font-semibold">New Note</span>
+</button>
+<!-- Navigation Links -->
+<nav class="flex-1 space-y-1">
+<div class="flex items-center space-x-3 py-2.5 px-3 rounded-lg text-blue-600 font-semibold cursor-pointer">
+<span class="material-symbols-outlined">note_stack</span>
+<span>All Notes</span>
+</div>
+<div class="flex items-center space-x-3 py-2.5 px-3 rounded-lg text-slate-500 hover:text-slate-900 transition-colors duration-200 cursor-pointer group">
+<span class="material-symbols-outlined">star</span>
+<span>Favorites</span>
+</div>
+<div class="flex items-center space-x-3 py-2.5 px-3 rounded-lg text-slate-500 hover:text-slate-900 transition-colors duration-200 cursor-pointer group">
+<span class="material-symbols-outlined">archive</span>
+<span>Archive</span>
+</div>
+</nav>
+<!-- Footer Tabs -->
+<div class="pt-6 border-t border-slate-200/50 space-y-1">
+<div class="flex items-center space-x-3 py-2.5 px-3 rounded-lg text-slate-500 hover:text-slate-900 transition-colors duration-200 cursor-pointer">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</div>
+</div>
+</aside>
+<!-- Secondary Note List Column (Middle) -->
+<main class="ml-72 flex-1 flex h-full">
+<section class="w-[380px] h-full bg-surface-container-low flex flex-col border-r border-transparent">
+<!-- Search Bar -->
+<div class="px-6 pt-10 pb-6">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span>
+<input class="w-full pl-12 pr-4 py-3 bg-surface-container-high border-none rounded-full text-sm focus:ring-2 focus:ring-primary/20 focus:bg-surface-bright transition-all placeholder:text-outline" placeholder="Search thoughts..." type="text"/>
+</div>
+</div>
+<!-- Note Scroll List -->
+<div class="flex-1 overflow-y-auto px-4 space-y-3 pb-10">
+<!-- Active Note Card -->
+<div class="p-5 bg-surface-container-lowest rounded-xl shadow-sm border border-primary/10 cursor-pointer transition-all duration-300">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xs font-medium text-primary uppercase tracking-widest">Strategy</span>
+<span class="text-[10px] text-secondary">2m ago</span>
+</div>
+<h3 class="text-sm font-bold text-on-surface mb-2 leading-tight">The Architecture of Silence in Modern Minimalist Design</h3>
+<p class="text-xs text-on-surface-variant line-clamp-2 leading-relaxed">Exploring how intentional whitespace and the absence of decorative elements can amplify a brand's core message...</p>
+</div>
+<!-- Inactive Card 1 -->
+<div class="p-5 hover:bg-surface-container-highest/40 rounded-xl cursor-pointer transition-all duration-200 group">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xs font-medium text-secondary opacity-60 uppercase tracking-widest">Editorial</span>
+<span class="text-[10px] text-secondary">4h ago</span>
+</div>
+<h3 class="text-sm font-semibold text-on-surface mb-2 leading-tight group-hover:text-primary transition-colors">Visual Storytelling through Typography</h3>
+<p class="text-xs text-on-surface-variant line-clamp-2 leading-relaxed">Why Inter remains the king of utility while maintaining a distinctive editorial edge when used with scale...</p>
+</div>
+<!-- Inactive Card 2 -->
+<div class="p-5 hover:bg-surface-container-highest/40 rounded-xl cursor-pointer transition-all duration-200 group">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xs font-medium text-secondary opacity-60 uppercase tracking-widest">Research</span>
+<span class="text-[10px] text-secondary">Yesterday</span>
+</div>
+<h3 class="text-sm font-semibold text-on-surface mb-2 leading-tight group-hover:text-primary transition-colors">Digital Materiality: Glassmorphism and the Z-Axis</h3>
+<p class="text-xs text-on-surface-variant line-clamp-2 leading-relaxed">Understanding the physics of blur and layering to create a sense of depth in flat interfaces...</p>
+</div>
+<!-- Inactive Card 3 -->
+<div class="p-5 hover:bg-surface-container-highest/40 rounded-xl cursor-pointer transition-all duration-200 group">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xs font-medium text-secondary opacity-60 uppercase tracking-widest">Archive</span>
+<span class="text-[10px] text-secondary">Oct 12</span>
+</div>
+<h3 class="text-sm font-semibold text-on-surface mb-2 leading-tight group-hover:text-primary transition-colors">Color Theory in the Age of OLED</h3>
+<p class="text-xs text-on-surface-variant line-clamp-2 leading-relaxed">How deep blacks and vibrant primary colors change the way we perceive software hierarchy on mobile devices...</p>
+</div>
+<!-- Decoration Card / Empty State Style -->
+<div class="p-5 bg-surface-container-high/20 rounded-xl border border-dashed border-outline-variant/30 flex flex-col items-center justify-center py-8">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-outline text-xl">lightbulb</span>
+</div>
+<p class="text-[10px] font-semibold text-outline text-center px-4">Start a new draft to expand your library of thoughts.</p>
+</div>
+</div>
+</section>
+<!-- Main Editor Area (Right) -->
+<section class="flex-1 bg-surface-container-lowest h-full relative flex flex-col items-center overflow-y-auto">
+<header class="w-full max-w-3xl px-12 pt-16 pb-8">
+<div class="flex items-center space-x-4 mb-8">
+<div class="flex -space-x-2">
+<img class="w-6 h-6 rounded-full border-2 border-surface-container-lowest object-cover" data-alt="close-up portrait of a woman with professional lighting and soft focus office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFFTnIHiIuBYfkit61s42Bev6FUWWMItrVkOe44qU-MtOG9GF-1FRYuWVarzpHcAEZz3e8VtCrrab_SehVw1t6MErc-H5wq8HyX-Ft3ZZHBUd3JeDIaKFlsBfFj43EmL7stEn9RRfexyAkdLWWdUHKbbnP-YijoAsyPT6TCL3a9g7OHMZAQcO_H8_vXQ80NmtAAnI3TvOqL4qXHKTlqqC5v6pphWoPeePw3Cu5NJOSrzHWihadA1wT_eVj8BQLFj0myzYSA9u3dmyB"/>
+<img class="w-6 h-6 rounded-full border-2 border-surface-container-lowest object-cover" data-alt="portrait of a man with clean studio lighting and soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_GhlBPJ-qJQHNG3aw3UGwsQ96Kn6SVOEPxJ-tiCAKhDb6OtBaT8XZUVjIm8hlEXhNFR-ha4mJDV60ZrvoEQlI4lRAorLagoSeTp1vgZA635yQDyXuDTiCYpHeo94mTVicsxjKLvUPD-UQey7BJUC2Vp1DTvlv5eZv-4ugbARJCXKoYU4p4pxpRrdxadFNs9OfZJwTDYQy86w42NvL9E9pGsN_h5FjoWEWdcmijaQ9Dq76NMVALKu1iseMF44CzQzJU-safv-X3pbl"/>
+</div>
+<span class="text-[10px] font-bold text-secondary tracking-widest uppercase">Collaborating with Sarah and Mike</span>
+<div class="flex-1 h-[1px] bg-surface-container"></div>
+<button class="text-secondary hover:text-primary transition-colors">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+<textarea class="w-full bg-transparent border-none focus:ring-0 text-5xl font-extrabold text-on-surface tracking-tighter leading-tight placeholder:text-outline-variant resize-none h-auto overflow-hidden" placeholder="Note Title..." rows="2">The Architecture of Silence in Modern Minimalist Design</textarea>
+</header>
+<div class="w-full max-w-3xl px-12 flex-1 pb-32">
+<div class="prose prose-slate max-w-none">
+<p class="text-xl text-on-surface leading-[1.8] font-light mb-8">
+                            In the chaotic landscape of modern interface design, <span class="bg-primary-container text-on-primary-container px-1">silence is a superpower.</span> It is not merely the absence of content, but a deliberate architectural choice to provide clarity.
+                        </p>
+<div class="grid grid-cols-2 gap-8 my-10">
+<figure class="space-y-3">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl shadow-on-surface/5">
+<img class="w-full h-full object-cover" data-alt="minimalist interior with a single wooden chair and soft natural light from a window, clean white walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPnHFUqD5J0tJNVIGfR28dVskPVu7vfaMkRCYZaHvrk978zJg9g89PZXvrdQ5lRF0u_t24t733KO9aBjzi9PszMe8yRGfybQ4LIcRNhgL66LkCcyNZ5f5G-3jDSIRRzBBEYGUdp3pfd-ExuvdssOB-LuwDojm0zEZr5FtX4V84PzlS2EHVyB1K_wuf3CiMGCfV-OLVSqBfJ8jHN50Ab-Vt0EoRScLCDLNIsuNU9Dk_BNVGfj1VPc-fQrJiByWTA67MmbBR2Jhuw1d4"/>
+</div>
+<figcaption class="text-[10px] text-secondary font-medium uppercase tracking-tighter">Fig 1. Spatial breathing room</figcaption>
+</figure>
+<div class="flex flex-col justify-center space-y-6">
+<h4 class="text-lg font-bold text-on-surface">The Editorial Shift</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                    Traditional apps treat the screen like a spreadsheet. Every pixel must be utilized. An editorial approach treats the screen like a canvas. 
+                                </p>
+<ul class="space-y-3">
+<li class="flex items-start space-x-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Typography over lines</span>
+</li>
+<li class="flex items-start space-x-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+<span>Tonal shifts over borders</span>
+</li>
+</ul>
+</div>
+</div>
+<p class="text-lg text-on-surface leading-[1.8] font-light">
+                            When we strip away the traditional 'boxes' and 'lines', we force the user to interact with the content directly. The UI becomes invisible, serving only as a quiet guide. This is the essence of the <span class="font-bold">Editorial Architect</span> style—building structures that feel like they aren't even there.
+                        </p>
+</div>
+</div>
+<!-- Floating Minimalist Toolbar -->
+<div class="fixed bottom-10 left-1/2 -translate-x-1/2 ml-36">
+<div class="glass-panel px-6 py-3 rounded-full shadow-2xl shadow-on-surface/10 border border-white/40 flex items-center space-x-6">
+<div class="flex items-center space-x-2 border-r border-outline-variant/30 pr-6">
+<button class="w-10 h-10 rounded-full hover:bg-primary/10 text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">format_bold</span>
+</button>
+<button class="w-10 h-10 rounded-full hover:bg-primary/10 text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">format_italic</span>
+</button>
+<button class="w-10 h-10 rounded-full hover:bg-primary/10 text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">link</span>
+</button>
+</div>
+<div class="flex items-center space-x-2 border-r border-outline-variant/30 pr-6">
+<button class="w-10 h-10 rounded-full hover:bg-primary/10 text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">list</span>
+</button>
+<button class="w-10 h-10 rounded-full hover:bg-primary/10 text-on-surface transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">format_quote</span>
+</button>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-xs font-bold text-on-surface/40 hover:text-on-surface transition-colors">SAVE DRAFT</button>
+<button class="signature-gradient h-10 px-6 rounded-full text-xs font-bold text-on-primary tracking-widest uppercase">Publish</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>
