@@ -1,49 +1,86 @@
+import { useCallback } from 'react';
+
 interface SearchBarProps {
   searchTerm: string;
   onSearchChange: (term: string) => void;
   placeholder?: string;
 }
 
+/**
+ * SearchBar component for filtering notes by text
+ * Features real-time search with clear button
+ */
 export function SearchBar({ searchTerm, onSearchChange, placeholder = 'Search notes...' }: SearchBarProps) {
+  /**
+   * Handle search input change
+   */
+  const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    onSearchChange(e.target.value);
+  }, [onSearchChange]);
+
+  /**
+   * Handle clear button click - resets search term
+   */
+  const handleClear = useCallback(() => {
+    onSearchChange('');
+  }, [onSearchChange]);
+
   return (
-    <div className="px-4 md:px-6 py-4 border-b border-gray-200 dark:border-gray-700">
-      <div className="relative">
+    <div className="relative">
+      {/* Search Icon */}
+      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500">
         <svg
-          className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+          xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          stroke="currentColor"
           viewBox="0 0 24 24"
+          strokeWidth={2}
+          stroke="currentColor"
+          className="w-5 h-5"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
-            strokeWidth={2}
-            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
           />
         </svg>
-        <input
-          type="text"
-          value={searchTerm}
-          onChange={(e) => onSearchChange(e.target.value)}
-          placeholder={placeholder}
-          className="w-full pl-10 pr-4 py-2.5 bg-gray-100 dark:bg-gray-800 border-none rounded-lg text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:bg-white dark:focus:bg-gray-900 transition-all"
-        />
-        {searchTerm && (
-          <button
-            onClick={() => onSearchChange('')}
-            className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
-        )}
       </div>
+
+      {/* Search Input */}
+      <input
+        type="text"
+        value={searchTerm}
+        onChange={handleSearchChange}
+        placeholder={placeholder}
+        className="w-full pl-12 pr-12 py-3 bg-gray-100 border-0 rounded-full text-sm text-gray-900 placeholder-gray-500 focus:ring-2 focus:ring-blue-200 focus:bg-white transition-all duration-200"
+        aria-label="Search notes"
+      />
+
+      {/* Clear Button */}
+      {searchTerm && (
+        <button
+          onClick={handleClear}
+          className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+          aria-label="Clear search"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={2}
+            stroke="currentColor"
+            className="w-5 h-5"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18 18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      )}
     </div>
   );
 }
